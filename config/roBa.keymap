@@ -94,7 +94,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans        &trans  &trans                      &trans  &trans    &kp L     &mo 5   &trans
-&trans  &trans  &trans        &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &mo 5
+&trans  &trans  &trans        &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
 &trans  &trans  &trans        &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
 &trans  &trans  &kp LEFT_WIN  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
