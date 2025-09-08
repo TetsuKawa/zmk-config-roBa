@@ -1,4 +1,6 @@
-j#include <behaviors.dtsi>
+j
+
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -93,10 +95,10 @@ j#include <behaviors.dtsi>
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans        &trans  &trans                      &trans  &trans    &kp L     &mo 5   &trans
-&trans  &trans  &trans        &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans        &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &kp LEFT_WIN  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans    &trans    &kp UP_ARROW    &trans           &trans                       &trans  &trans    &kp L     &mo 5   &trans
+&kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans    &trans    &trans          &trans           &trans   &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans    &trans    &kp LEFT_WIN    &trans           &trans   &trans      &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
