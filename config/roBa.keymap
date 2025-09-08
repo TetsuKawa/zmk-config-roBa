@@ -9,7 +9,7 @@ j#include <behaviors.dtsi>
 };
 
 &trackball {
-    // automouse-layer = <4>;
+    automouse-layer = <4>;
     scroll-layers = <5>;
 
     // arrows {
