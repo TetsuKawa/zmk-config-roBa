@@ -99,11 +99,7 @@
 &trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
             >;
 
-<<<<<<< Updated upstream
-            sensor-bindings = <&inc_dec_kp PAGE_UP LC(PAGE_DOWN)>;
-=======
             sensor-bindings = <&encoder_msc_down_up>;
->>>>>>> Stashed changes
         };
 
         MOUSE {
@@ -114,11 +110,7 @@
 &trans    &trans    &kp LEFT_WIN    &trans           &trans   &trans      &trans  &trans                              &trans
             >;
 
-<<<<<<< Updated upstream
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
-=======
             sensor-bindings = <&encoder_msc_down_up>;
->>>>>>> Stashed changes
         };
 
         SCROLL {
@@ -129,11 +121,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
 
-<<<<<<< Updated upstream
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
-=======
             sensor-bindings = <&encoder_msc_down_up>;
->>>>>>> Stashed changes
         };
 
         layer_6 {
