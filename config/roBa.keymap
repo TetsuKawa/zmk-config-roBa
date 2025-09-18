@@ -65,7 +65,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R      &kp T                                                       &kp Y      &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F      &kp G        &kp PRINTSCREEN              &kp BACKSLASH     &kp H      &kp J  &kp K      &lt 4 L  &mt RIGHT_ALT SEMI
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &mt LS(LCTRL) LS(SPACE)      &kp SINGLE_QUOTE  &kp N      &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &mt LS(LCTRL) LC(SPACE)      &kp SINGLE_QUOTE  &kp N      &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 F10  &lt 2 SPACE  &mt LCTRL TAB                &kp BACKSPACE     &kp ENTER                             &kp ESCAPE
             >;
 
@@ -88,7 +88,7 @@
 &kp MINUS       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &kp EQUAL  &kp GRAVE
 &kp NUMBER_0    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &trans      &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans     &trans     &trans
 &kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_EQUAL  &trans      &trans  &kp LESS_THAN         &kp GREATER_THAN       &trans     &trans     &trans
-&trans          &kp NUMBER_0  &trans        &trans        &trans        &trans      &trans  &kp DELETE                                                            &kp DELETE
+&trans          &kp NUMBER_0  &trans        &trans        &trans        &trans      &trans  &kp DELETE                                                         &kp DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -107,10 +107,10 @@
 
         MOUSE {
             bindings = <
-&trans    &trans    &kp UP_ARROW    &trans           &trans                       &trans  &trans    &mo 5     &trans  &trans
-&kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans    &trans    &trans          &trans           &trans   &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans    &trans    &kp LEFT_WIN    &trans           &trans   &mo 3       &trans  &trans                              &trans
+&trans    &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                       &trans  &trans    &mo 5     &trans  &trans
+&kp HOME  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans    &trans           &trans          &trans           &trans   &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans    &trans           &kp LEFT_WIN    &trans           &trans   &mo 3       &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
