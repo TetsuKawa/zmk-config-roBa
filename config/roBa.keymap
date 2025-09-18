@@ -47,11 +47,13 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -61,10 +63,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R      &kp T                                               &kp Y      &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F      &kp G        &kp PRINTSCREEN      &kp BACKSLASH     &kp H      &kp J  &kp K      &lt 4 L  &kp SEMI
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &kp LS(LCTRL)        &kp SINGLE_QUOTE  &kp N      &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 F10  &lt 2 SPACE  &mt LCTRL TAB        &kp BACKSPACE     &kp ENTER                             &kp ESCAPE
+&kp Q             &kp W         &kp E         &kp R      &kp T                                                       &kp Y      &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F      &kp G        &kp PRINTSCREEN              &kp BACKSLASH     &kp H      &kp J  &kp K      &lt 4 L  &mt RIGHT_ALT SEMI
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B        &mt LS(LCTRL) LS(SPACE)      &kp SINGLE_QUOTE  &kp N      &kp M  &kp COMMA  &kp DOT  &mt RSHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 6 F10  &lt 2 SPACE  &mt LCTRL TAB                &kp BACKSPACE     &kp ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -105,10 +107,10 @@
 
         MOUSE {
             bindings = <
-&trans    &trans    &kp UP_ARROW    &trans           &trans                       &trans  &trans    &mo 5     &trans  &trans
-&kp HOME  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans    &trans    &trans          &trans           &trans   &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans    &trans    &kp LEFT_WIN    &trans           &trans   &trans      &trans  &trans                              &trans
+&trans    &kp LS(LC(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                       &trans  &trans    &mo 5     &trans  &trans
+&kp HOME  &kp LEFT         &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
+&trans    &trans           &trans          &trans           &trans   &trans      &trans  &trans  &trans    &trans    &trans  &trans
+&trans    &trans           &kp LEFT_WIN    &trans           &trans   &trans      &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
